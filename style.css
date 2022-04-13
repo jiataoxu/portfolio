@@ -1,4 +1,6 @@
 
+
+
 #bodyComp {
 	background-color:black
 }
@@ -46,6 +48,15 @@
 	z-index: +5;
 
 }
+
+
+@media (max-width: 1268px) {
+    #navigator {
+        display: none;
+    }
+}
+
+
 #homeNavi {
 	display:block;
 	color: inherit;
@@ -60,6 +71,8 @@
 	color:white;
 	padding-top:130px;
 }
+
+
 
 .pageTitle {
 	position: relative;
@@ -112,13 +125,21 @@ ul.square {
 }
 
 .float {
+	cursor: pointer;
 	float: left;
   	width: 20%;
   	padding: 25px;
   	margin:30px;
   	border:solid;
   	background-color:white;
+	min-width: 250px;
   }
+
+ .floatZoom {
+  	width:20%;
+ }
+
+
 
 .iframeFloat{
 	float: left;
@@ -155,6 +176,46 @@ ul.square {
 	margin-left: auto;
 	 margin-right: auto;
 	width: 50%;
+}
+
+
+/* w3school OP */
+.modal {
+	display: none; 
+	position: fixed;
+	z-index: 6; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%; 
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 2% auto;
+	padding: 20px;
+	width: 50%;
+	border: solid;
+	max-width:1000px;
+	height:auto;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 

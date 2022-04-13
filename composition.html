@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Compositions</title>
+		<title>Composition</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script type="text/javascript" src="processing.js"></script>
 	</head>
-	
+	<style>
+			
+	</style>
 	
 	<body id = "bodyComp">
 		<div class = "pageTitle">
@@ -15,13 +16,25 @@
 				<img style = "float:left; padding-right:30px" alt = "sadcrown" src = "Other/home.png" height = "90px" width="105px">
 			</a>
 
-				<h>COMPOSITIONS</h>
+				<h>All Composition</h>
 			
 		</div>
 
+		<div id="myModal" class="modal">
+			  <div class="modal-content" >
+				<span class="close">&times;</span>
+				<div id = "modal_des"></div>
+			  </div>
+		</div>
 
+
+		&emsp;&emsp;<a style = "font-size: 24px; color:white;" href = "index.html"> >> Home << </a>&emsp;&emsp;
+		<a style = "font-size: 24px; color:white;" href = "selected.html"> >> Selected Works << </a>&emsp;&emsp;
+		<a style = "font-size: 24px; color:white;" href = "about.html"> >> About Me << </a>&emsp;&emsp;
+		
+			
 		<div class = "largeContainer">
-
+		
 			<div class = "subText">
 				<p><i>Works that I'm proud of ...</i></p>
 			</div>
@@ -34,6 +47,7 @@
 					<li><a class = "naviATag" href = "#illustrator">ILLUSTRATOR</a></li>
 					<li><a class = "naviATag" href = "#glitch">GLITCH ARTS</a></li>
 					<li><a class = "naviATag" href = "#netArt">NET ART</a></li>
+					<li><a class = "naviATag" href = "#vid">VIDEOS</a></li>
 					<li><a class = "naviATag" href = "#meshmixer">MESHMIXER</a></li>
 					<li><a class = "naviATag" href = "#processing">PROCESSING</a></li>
 					<li><a class = "naviATag" href = "#p5">P5.JS</a></li>
@@ -44,239 +58,630 @@
 				<a id = "homeNavi" href = "index.html"><b> > Home < </b></a>
 				
 			</div>
-				
 
-		
 
+
+
+
+
+
+			<!--Photoshop>-->
 			<div style = "margin-left: 20%;">
-				<div style = "margin-top: 5%">
-					<h id = "photoshop" style = "padding: 25px; font-size: 50px">PHOTOSHOPS</h>
+					<div style = "margin-top: 5%">
+						<h id = "photoshop" style = "padding: 25px; font-size: 50px">PHOTOSHOPS</h>
 					
-					<div class = "subText">
-						<p><i>Photoshop. Yes. Stuff made from Adobe Photoshop ...</i></p>
-					</div>
-
-					<div class = "clearfix">
-
-						<div class = "float">
-							<img class = "thumbnails" alt = "David" src = "PS/XuJiatao_p4.jpg">
-							<p class = "imgDescription">Name: David<br>Medium: Photoshop<br>Dimension: 1200x857</p>
+						<div class = "subText">
+							<p><i>Photoshop. Yes. Stuff made from Adobe Photoshop ...</i></p>
 						</div>
 
-						<div class = "float">
-							<img class = "thumbnails" alt = "Aquarium" src = "PS/XuJiatao_p2.jpg">
-							<p class = "imgDescription">Name: Aquarium<br>Medium: Photoshop<br>Dimension: 1200x750</p>
-						</div>
+						<div class = "clearfix">
 
-						<div class = "float">
-							<img class = "thumbnails" alt = "Lizard and Town" src = "PS/XuJiatao_p1.jpg">
-							<p class = "imgDescription">Name: Lizard and Town<br>Medium: Photoshop<br>Dimension: 1200x800</p>
-						</div>
+							<div class = "float" id = "space" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "SpacePoster" src = "Ai/JiataoXu_SpacePoster.png">
+							<p class = "imgDescription">Name: 2024<br>Medium:Photoshop, ClipStudioPaint<br>Dimension: 3847x6600</p>
+							<p style = "display: none;">
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;A introductory project to glitching. 
+									<i>2024</i> is inspired by announcement of NASA deciding to launch another lunar mission by the year 2024.
+									I want to create a poster documenting mankind's achievement in space exploration. The poster includes rocket designs and blueprints from the NASA, Interkosmos (Soviet space agency), and SpaceX.
+									Meanwhile, the center-pieces is a rocket that incoprated rocket component from all of these agencies/companies. The first section was inspired by SpaceX's Starship, 
+									the center section was inspired by NASA's Saturn V, and the last section was inspired by the Soviet's Soyuz. The united design signifies space exploration being a human achievement.
+									<br><a href="Ai/JiataoXu_SpacePoster.png" target="_blank">Full Image</a>
+								</p>
+							</div>
 
-						<div class = "float">
-							<img class = "thumbnails" alt = "Butterfly" src = "PS/XuJiatao_p3.jpg">
-							<p class = "imgDescription">Name: Butterfly<br>Medium: Photoshop<br>Dimension: 1081x634</p>
-						</div>
 
+							<div class = "float" id = "aq" onclick = "ModalDisplay(this.id)">
+								<img class = "thumbnails" alt = "Aquarium" src = "PS/XuJiatao_p2.jpg">
+								<p class = "imgDescription">Name: Aquarium<br>Medium: Photoshop<br>Dimension: 1200x750</p>
+								<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;This was one of the earliest assignments in ART74. The image is a result combining a image of people's silhouette infront of an aquarium
+									and a ocean photography via lassoing.
+									<br>
+									<br><a href="PS/XuJiatao_p2.jpg" target="_blank">Full Image</a>
+								</p>
+							</div>
+
+							<div class = "float" id = "dv" onclick = "ModalDisplay(this.id)">
+								<img class = "thumbnails" alt = "David" src = "PS/XuJiatao_p4.jpg">
+								<p class = "imgDescription">Name: David<br>Medium: Photoshop<br>Dimension: 1200x857</p>
+								<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;<i>David</i> is inspired by the vaporwave asethetic. As the name suggest, the work depicts
+									the glitched head of David. The statue of the image appropriated, cropped, and the glitch effect was created via Photoshop.
+									The pieces was monumental for me as it was first thing I created with Photoshop outside of a class assignment, something I still treasure to this day.
+									<br>
+									<br><a href="PS/XuJiatao_p4.jpg" target="_blank">Full Image</a>
+									</p>
+							</div>
+
+							
+
+							<div class = "float" id = "liz" onclick = "ModalDisplay(this.id)" >
+								<img class = "thumbnails" alt = "Lizard and Town" src = "PS/XuJiatao_p1.jpg">
+								<p class = "imgDescription">Name: Lizard and Town<br>Medium: Photoshop<br>Dimension: 1200x800</p>
+								<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;What would happen when a giant lizard invade a seaside town. A light-hearted composite image imitates childplay.
+									<br>
+									<br><a href="PS/XuJiatao_p1.jpg" target="_blank">Full Image</a>
+								</p>
+							</div>
+
+							
 						
+						</div>
 					</div>
-				</div>
+			
 
-
-				<div style = "margin-top: 5%">
+			<!-- vector art -->
+			<div style = "margin-top: 5%">
 					<h id = "illustrator" style = "padding: 25px; font-size: 50px">ILLUSTRATOR</h>
 					<div class = "subText">
 						<p><i>Vector Art ...</i></p>
 					</div>
 
 
-					<div style = "margin-left: 20%">
+					
 						<div class = "clearfix">
-							<div class = "float">
+
+							<div class = "float" id = "ls" onclick = "ModalDisplay(this.id)">
+								<img class = "thumbnails" alt = "Low Sanity" src = "Ai/JiataoXu_Low Sanity.png">
+								<p class = "imgDescription">Name: Low Sanity<br>Medium: Adobe Illustrator, ClipStudioPaint<br>Dimension: 2376x2994</p>
+								<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; A self-portrait of the moment. I was dealing with an episode of anxiety attack. I was feeling depressed and powerless. I felt like whatever I had created had no value because I can not find any value in anything.
+									I created this work to cope with my depression. The process calm me down, allow me to walk myself out of the mud, and continuing on.
+									<br>
+									<br><a href="Ai/JiataoXu_Low Sanity.png" target="_blank">Full Image</a>
+								</p>
+							</div>
+
+							
+							<div class = "float" id = "gm" onclick = "ModalDisplay(this.id)">
 								<img class = "thumbnails" alt = "Gradian Mesh" src = "Ai/XuJiatao_i1.jpg">
 								<p class = "imgDescription">Name: Gradian Mesh<br>Medium: Adobe Illustrator<br>Dimension: 1200x1200
+								<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;Another practice piece with Adobe Illustrator. The piece is a formal exploration of shapes and gradians of hue. The goal was to create
+									an aesthetically appealing image. The forms are inspired by articulations of flora and flow of water.
+									<br>
+									<br><a href="Ai/XuJiatao_i1.jpg" target="_blank">Full Image</a>
+								</p>
 							</div>
 
-							<div class = "float">
+							<div class = "float" id = "vp" onclick = "ModalDisplay(this.id)">
 								<img class = "thumbnails" alt = "Vector Particle" src = "Ai/XuJiatao_i2.jpg">
 								<p class = "imgDescription">Name: Vector Particle<br>Medium: Adobe Illustrator<br>Dimension: 1200x1198</p>
+								<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; An abstracted piece created with a repetition of shapes and paths, manipulated with the pen tool, the result resembles a star system around a supermassive black hole.
+									<br>
+									<br><a href="Ai/XuJiatao_i2.jpg" target="_blank">Full Image</a>
+								</p>
 							</div>
+
+							<div class = "float" id = "bf" onclick = "ModalDisplay(this.id)">
+								<img class = "thumbnails" alt = "Butterfly" src = "PS/XuJiatao_p3.jpg">
+								<p class = "imgDescription">Name: Butterfly<br>Medium: Photoshop<br>Dimension: 1081x634</p>
+								<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; ART 74 assignment. A formal exploration to create a image that draws the audiences' attention by creating depth using layer and gradians.
+									<br>
+									<br><a href="PS/XuJiatao_p3.jpg" target="_blank">Full Image</a>
+								</p>
+							</div>
+
 						</div>
-					</div>
+					
+			</div>
 
-				
-				</div>
 
-				<div style = "margin-top: 5%">
+			<!--glitch-->
+			<div style = "margin-top: 5%">
 					<h id = "glitch" style = "padding: 25px; font-size: 50px">GLITCHES</h>
 					<div class = "subText">
 						<p><i>01100010 01100101 01100101 01110000<br>01100010 01101111 01101111 01110000 ...</i></p>
 					</div>
 
 					<div class = "clearfix">
-						<div class = "float">
+						<div class = "float" id = "w1" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Way" src = "Glitch/XuJiatao_g1.jpg">
 							<p class = "imgDescription">Name: Way<br>Medium: Audacity, Photoshop<br>Dimension: 899x1200</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;A introductory project to glitching. 
+									<i>Way</i> is inspired by the path of life, where the future ahead is
+									always uncertain, and the path itself is always unpredictable. 
+									The unpredictability of outcome of audiowave and text manipulation also adds to the narrative.
+									The original image is appropriated from the net.
+									<br><a href="Glitch/XuJiatao_g1.jpg" target="_blank">Full Image</a>
+								</p>
 						</div>
 
-						<div class = "float">
+						<div class = "float" id = "w2" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Way" src = "Glitch/XuJiatao_g2.jpg">
 							<p class = "imgDescription">Name: Way<br>Medium: Sublime (text manipulation), Photoshop<br>Dimension: 899x1200</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;A introductory project to glitching. <i>Way</i> is inspired by the path of life, where the future ahead is
+									always uncertain, and the path itself is always unpredictable. 
+									The unpredictability of outcome of audiowave and text manipulation also adds to the narrative.
+									The original image is appropriated from the net.
+									<br>
+									<br><a href="Glitch/XuJiatao_g2.jpg" target="_blank">Full Image</a>
+								</p>
 						</div>
 
-						<div class = "float">
+						<div class = "float" id = "m1" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Mushroom" src = "Glitch/XuJiatao_g3.jpg">
 							<p class = "imgDescription">Name: Mushroom<br>Medium: Audacity, Photoshop<br>Dimension: 1200x791</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;<i>Mushrooms</i> is a two-pieces series of glitch art created during ART74. 
+									I create this two pieces Through the use of text- and audiowave-manipluation. The trippy and abstract nature of both images allude to psychedelic effect of Psilocybin (magic mushroom)
+									, or in general, the usage of drugs. The original image of the mushroom is appropriated from the net
+									<br>
+									<br><a href="Glitch/XuJiatao_g3.jpg" target="_blank">Full Image</a>
+								</p>
 						</div>
-						<div class = "float">
+						<div class = "float" id = "m2" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Mushroom" src = "Glitch/XuJiatao_g4.jpg">
 							<p class = "imgDescription">Name: Mushroom<br>Medium: Sublime (text manipulation), Photoshop<br>Dimension: 1819x1200</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;<i>Mushrooms</i> is a two-pieces series of glitch art created during ART74. 
+									I create this two pieces Through the use of text- and audiowave-manipluation. The trippy and abstract nature of both images allude to psychedelic effect of Psilocybin (magic mushroom)
+									, or in general, the usage of drugs. The original image of the mushroom is appropriated from the net
+									<br>
+									<br><a href="Glitch/XuJiatao_g4.jpg" target="_blank">Full Image</a>
+								</p>
 						</div>
-						<div class = "float">
+						<div class = "float" id = "col1" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "A Collage Of Hyperrealism" src = "Glitch/XuJiatao_g5.jpg">
-							<p class = "imgDescription">Name: A Collage Of Hyperrealism<br>Medium: Photoshop<br>Dimension: 1200x1200</p>
+							<p class = "imgDescription">Name: A Collage Of Hyperrealism (Collage Glitched)<br>Medium: Photoshop<br>Dimension: 1200x1200</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;This is a collage of hyperrealism drawing sourced from the internet. This is part of the Collage Glitched Project. 
+									I want to create a interesting composite first before I glitch it.
+									<br>
+									<br><a href="Glitch/XuJiatao_g5.jpg" target="_blank">Full Image</a>
+								</p>
 						</div>
-						<div class = "float">
+						<div class = "float" id = "pi" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Pi (Collage Glitched)" src = "Glitch/XuJiatao_g6.jpg">
 							<p class = "imgDescription">Name: Pi (Collage Glitched)<br>Medium: Audacity, Photoshop<br>Dimension: 1200x1200</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; A glitched result of the previous collage. This image was convert to audiowave and heavily processed in Adacity. The result is a facinating repetition of texture.
+									Despite the overall textures are gibberish, the repetition ties them down into a more controlled manner and adds another layers of meaning to it. Additionally, the name comes
+									from the black artifacts at the bottom third of the image which resemble the letters "PI".
+									<br>
+									<br><a href="Glitch/XuJiatao_g6.jpg" target="_blank">Full Image</a>
+								</p>
 						</div>
-						<div class = "float">
+						<div class = "float" id = "col2" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Collage Glitched 2" src = "Glitch/XuJiatao_g7.jpg">
 							<p class = "imgDescription">Name: Collage Glitched 2<br>Medium: Audacity, Photoshop<br>Dimension: 1200x1200</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; Part of the Collage Glitched Project. This image was less processed in Adacity compared to <i>Pi</i>. The result creates an
+									uncanny feeling to it, especially when you starring back at the eyes. The addition color created by glitching also adds an interesting emphasis to the texture.
+									<br>
+									<br><a href="Glitch/XuJiatao_g7.jpg" target="_blank">Full Image</a>
+								</p>
 						</div>
-						<div class = "float">
+						<div class = "float" id = "col3" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Collage Glitched 3" src = "Glitch/XuJiatao_g8.jpg">
 							<p class = "imgDescription">Name: Collage Glitched 3<br>Medium: Audacity, Photoshop<br>Dimension: 1200x1200</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;Part of the Collage Glitched Project. The collage was glitched twice. The image was rotated 90 degree before glitching it the second time.
+									The result was more abstract compared to the second image; only the texture of the skin remains. 
+									One interesting note is that the rotation creates a grid-like artifact (you can see it more clearly in full resolution) akin to what would present out of 
+									a cathode-ray tube display.
+									<br>
+									<br><a href="Glitch/XuJiatao_g8.jpg" target="_blank">Full Image</a>
+								</p>
 						</div>
 
-						<div class = "float">
-							<img class = "thumbnails" alt = "Collage (Variant in production)" src = "Glitch/XuJiatao_g9.jpg">
-							<p class = "imgDescription">Name: Collage (Variant in production)<br>Medium: Photoshop<br>Dimension: 1200x1200</p>
+						<div class = "float" id = "col4" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "Human" src = "Glitch/XuJiatao_g9.jpg">
+							<p class = "imgDescription">Name: Human (Collage Glitched)<br>Medium: Photoshop<br>Dimension: 1200x1200</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;<i>Human</i> is a variation of the Hyperrealism Collage. It was processed with different layer property. The resulting juxaposition is both
+									familiar yet disconnecting. From afar, the image resemble a human face, abeit a little distorted, but at a closer look, the overlapping texture creates a uncanny 
+									feeling to it. For this image, I want to create an imagery with something we all familar with and disconnect that familarity through manipluation. I used the hyperrealism drawing because
+									it also draws to the same idea of disconnect; despite it realism and attention to detail, it's still a drawing.
+									<br>
+									<br><a href="Glitch/XuJiatao_g9.jpg" target="_blank">Full Image</a>
+								</p>
 						</div>
-						<div style = "margin-left: 20%">
-							<div class = "iframeFloat">
-								<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_2im44SbN8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								<p class = "imgDescription">Name: Hyper-reality<br>Medium: After Effect, Illustrator, Animate<br><br>
-							</div>
-						</div>
-
-
-
+						
+						
 					</div>
-				</div>
 
-				<div style = "margin-top: 5%">
+					
+			</div>
+
+			<div style = "margin-top: 5%">
 					<h id = "netArt" style = "padding: 25px; font-size: 50px">NETART</h>
 					<div class = "subText">
 							<p><i>or Web Art. Made out of HTML, CSS and JS ...</i></p>
 						</div>
-					<div style = "margin-left: 30%">
 						
 						<div class = "clearfix">
-							<div class = "float">
-								<img class = "thumbnails" alt = "The Moon, The mountain, the stars, and some extras" src = "Other/XuJiatao_netart.png">
-								<p class = "imgDescription">Name: The Moon, The mountain, the stars, and some extras<br>Medium: HTML/CSS/JS<br><a href="https://jiataoxu.github.io/">https://jiataoxu.github.io/</a></p>
+							<div class = "float" id = "moon" onclick = "ModalDisplay(this.id)">
+								<img class = "thumbnails" alt = "The Moon, the mountain, the stars, and some extras" src = "Other/XuJiatao_netart.png">
+								<p class = "imgDescription">Name: The Moon, the mountain, the stars, and some extras<br>Medium: HTML/CSS/JS<br></p>
+								<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br>
+									<a href="https://jiataoxu.github.io/" target="_blank">>>Full Project<<</a>
+									<br>
+									&emsp;The goal of <i>The Moon</i> is to create a tranquil space fills with fragment of unrelated infomation. It's a representation of a flow state, where unrelating idea converges into
+									one, and finally developing into a creative idea. Click around and have fun discovering the narratives.
+									<br>
+									<br>
+								</p>
 							</div>
 						</div>
-					</div>
-				</div>
+			</div>
 
-				<div style = "margin-top: 5%">
+			<div style = "margin-top: 5%">
+					<h id = "vid" style = "padding: 25px; font-size: 50px">VIDEOS</h>
+					<div class = "subText">
+							<p><i>Strange strange narratives</i></p>
+					</div>
+
+					<div class = "clearfix">
+						<div class = "float" id = "train" onclick = "ModalDisplay(this.id)">
+									<img class = "thumbnails" alt = "Hyperreality" src = "Other/XuJiatao_HyperReality.png">
+									<p class = "imgDescription">Name: Hyper-reality<br>Medium: After Effect, Illustrator, Animate<br>Dimension: 1080p; 5 seconds<br>
+									<p style = "display: none;" 
+										<br>
+										<b>DESCRIPTION</b>:
+										<br>
+										<a href="https://youtu.be/_2im44SbN8M" target="_blank">>> Video Link <<</a>
+										<br>
+										&emsp; <i>Hyper-reality</i> is part of ART74 assignment. The video concept was inspire by <a href="https://youtu.be/YJg02ivYzSs" target="_blank">HYPER-REALITY</a> by Keiichi Matsuda.
+										The concept is a mean to present a provocate future where rampant capitalism takes over every part of our life with advertising by intergrating adverts into our field of vision. It's a critique to unresricted capitalism.
+										Similarity, I want to explore the same concept with this project by using almost disorientating effects and pop-up to re-imagine this grim future.
+
+										<br>
+										<br>
+									</p>
+						</div>
+
+						<div class = "float" id = "Lesser" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "Hyperreality" src = "Other/XuJiatao_75Final.png">
+							<p class = "imgDescription">Name: The Rise and Fall of the Lesser Cool Jiatao<br>Medium: After Effect, Premiere<br>Dimension: 1080p; 5 minutes 16 seconds<br>
+							<p style = "display: none;" 
+								<br>
+								<b>DESCRIPTION</b>:
+								<br>
+								<a href="https://youtu.be/ziN7zA9ChHY" target="_blank">>> Video Link <<</a>
+								<br>
+								&emsp; Final project of ART75. A story invloves in theifing, rushing timeline, dimension travel, and time police. Shot with my Iphone, edited with After Effect. Audio design with Premiere.
+
+								<br>
+								<br>
+							</p>
+						</div>
+
+
+				
+						<div class = "float" id = "dreambelike" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "dreambelike" src = "Other/XuJiatao_weirddream.png">
+							<p class = "imgDescription">Name: Dream have meanings," meanwhile:<br>Medium: After Effect, Premiere<br>Dimension: 1080p; 1 minute 50 seconds<br>
+							<p style = "display: none;" 
+								<br>
+								<b>DESCRIPTION</b>:
+								<br>
+								<a href="https://youtu.be/l6ueX5u6mRA" target="_blank">>> Video Link <<</a>
+								<br>
+								&emsp; This weird video was a result of a playful session of brainstroming. The project was inspired that shares the same title and basic
+								idea. I was related to that idea that dream often has no meaning to such a extend that I produced my own verison of that meme. I want to express 
+								that the idea mythical/super-nature connection of dream and future are absurd and psudo-scientific. I decide to express that absurdity throught
+								a silly fun video with heavy artificiality. The video taken on my phone and
+								processed with After Effect and Premiere for audio design.
+
+								<br>
+								<br>
+							</p>
+						</div>
+					</div>	
+						
+			</div>
+
+
+
+			<div style = "margin-top: 5%">
 					<h id = "meshmixer" style = "padding: 25px; font-size: 50px;">MESHMIXER</h>
 					<div class = "subText">
 							<p><i>Trippy 3D Model-Maker ...</i></p>
 						</div>
-					<div class = "clearfix">
-						<div class = "iframeFloat">
-							<div class="sketchfab-embed-wrapper">
-							    <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/d62e65ea4faa4449b5255e8ae543849f/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-							    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-							        <a href="https://sketchfab.com/3d-models/the-corona-situation-d62e65ea4faa4449b5255e8ae543849f?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">The Corona Situation</a>
-							        by <a href="https://sketchfab.com/jiatao.xu?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">jiatao</a>
-							        on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
-							    </p>
-							</div>
 
+
+					<div class = "clearfix">
+						<div class = "float" id = "corona" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "The Corona Situation" src = "Meshmixer/XuJiatao_m1.png">
 							<p class = "imgDescription">Name: The Corona Situation<br>Medium: Meshmixer<br><a></a></p>
+							<p style = "display: none;" 
+									<br>
+									<b>DESCRIPTION</b>:
+									<br>
+									<a href="https://skfb.ly/6QVTD" target="_blank">>> SketchFab link (Fully interactable 3D model) <<</a>
+									<br>
+										 &emsp;This 3D sculpture was made in the start of the COVID-19 lockdown. It was created to represent my experience
+										of the lockdown. The center-piece of the sculpture was inspired by the popular internet "This is Fine" meme, which depict
+										an apathic anthropomorphic dog sitting surround by the fire (<a href = "https://knowyourmeme.com/memes/this-is-fine">https://knowyourmeme.com/memes/this-is-fine</a>).
+										During that time, I shared the same sentiment as the dog depicted in the meme: feeling that the world is ending.
+
+									<br>
+									<br>
+							</p>
 						</div>
 
-						<div class = "float">
+						<div class = "float" id = "hug" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Weird Face" src = "Meshmixer/XuJiatao_m2.png">
 							<p class = "imgDescription">Name: Give me a hug<br>Medium: Meshmixer<br></p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;Preliminary practice with Meshmixer. 
+									<br>
+									<br>
+							</p>
 						</div>
 
-						<div class = "float">
+						<div class = "float" id = "cow" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Strong Cow" src = "Meshmixer/XuJiatao_m3.png">
 							<p class = "imgDescription">Name: Strong Cow<br>Medium: Meshmixer<br></p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;Preliminary practice with Meshmixer. 
+									<br>
+									<br>
+							</p>
 						</div>
 					</div>
+			</div>
 
 
-				</div>
 
-				<div style = "margin-top: 5%">
+
+
+			<div style = "margin-top: 5%">
 					<h id = "processing" style = "padding: 25px; font-size: 50px;">PROCESSING</h>
 					<div class = "subText">
 							<p><i>Code -- processing --> Art</i></p>
-						</div>
-
-					<div class = "clearfix">
-						<div class = "float">
-							<img class = "thumbnails" alt = "Piet Monderian" src = "Processing/s1.png">
-							<p class = "imgDescription">Name: Piet Monderian<br>Medium: Processing<br>Dimension: 400x400</p>
-						</div>
-
-						<div class = "float">
-							<img class = "thumbnails" alt = "Collapse" src = "Processing/s3.png">
-							<p class = "imgDescription">Name: Collapse<br>Medium: Processing<br>Dimension: 600x600</p>
-						</div>
-
-						<div class = "float">
-							<img class = "thumbnails" alt = "Logo" src = "Processing/logo.png">
-							<p class = "imgDescription">Name: Logo Design<br>Medium: Processing<br>Dimension: 500x500</p>
-						</div>
-
-						<div class = "float">
-							<img class = "thumbnails" alt = "ME" src = "Processing/portrait.png">
-							<p class = "imgDescription">Name: It's ME<br>Medium: Processing<br>Dimension: 893x900</p>
-						</div>
-
-
-
 					</div>
 
-				</div>
+					<div class = "clearfix">
+						<div class = "float" id = "pietMon" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "Piet Monderian" src = "Processing/s1.png">
+							<p class = "imgDescription">Name: Piet Monderian<br>Medium: Processing<br>Dimension: 400x400</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; A study of Piet Monderian's abract geometry using Processing.
+									<br>
+									<br><a href="" target="_blank">Full Image</a>
+							</p>
+						</div>
 
-				<div style = "margin-top: 5%">
+						<div class = "float" id = "proc_logo" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "Logo" src = "Processing/logo.png">
+							<p class = "imgDescription">Name: Logo Design<br>Medium: Processing<br>Dimension: 500x500</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; A short logo design challenge. This was design for a fictional pizza delivery service.
+									<br>
+							</p>
+						</div>
+
+						<div class = "float" id = "proc_me" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "ME" src = "Processing/portrait.png">
+							<p class = "imgDescription">Name: It's ME<br>Medium: Processing<br>Dimension: 893x900</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;
+									<br>
+									<br><a href="" target="_blank">Full Image</a>
+							</p>
+						</div>
+
+						<div class = "float" id = "collaspe" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "Collapse" src = "Processing/s3.png">
+							<p class = "imgDescription">Name: Collapse<br>Medium: Processing<br>Dimension: 600x600</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; This project was inspired by the ending of Microsoft Solitaire when every cards will drop down from thier holder creating a spectacular finish.
+									I try to use processing to recreate that motion and adding color to each transition.
+									<br><br>
+									<br><b>Source Code</b>:
+									<br>PShape w1, w2, w3, w4;
+									<br>PShape red, yellow, blue;
+									<br>
+									<br>void setup() {
+									<br>  size(600,600);
+									<br>  background(0);
+									<br>  smooth();
+									<br>  frameRate(30);
+									<br>fill(255); //white
+									<br>w1 = createShape(RECT,0,0,150,200);
+									<br>w2 = createShape(RECT,0,225,150,210);
+									<br>w3 = createShape(RECT,165,450,395,150);
+									<br>w4 = createShape(RECT,575,450,25,70);
+									<br>fill(255,0,0); //red
+									<br>red = createShape(RECT,165,0,435,435);
+									<br>fill(0,0,255); //blue
+									<br>blue = createShape(RECT,0,450,150,150);
+									<br>fill(255,255,0); //yellow
+									<br>yellow = createShape(RECT,575,530,25,70);}<br>
+									<br>void draw() {
+										<br>redraw();
+										<br>if (mousePressed) { 
+											<br>red.setFill(color(random(255),random(255),random(255)));
+											<br>yellow.setFill(color(random(255),random(255),random(255)));
+											<br>blue.setFill(color(random(255),random(255),random(255)));
+											<br>red.translate(5,5);
+											<br>yellow.translate(5,5);
+											<br>blue.translate(5,5);
+											<br>w1.translate(5,5);
+											<br>w2.translate(5,5);
+											<br>w3.translate(5,5);
+											<br>w4.translate(5,5);
+										<br>}
+									<br>}<br>
+									<br>void mouseReleased(){
+										<br>clear();
+										<br>setup();
+										<br>redraw();
+									<br>}
+									<br>void redraw() {
+										<br>shape(w1);
+										<br>shape(w2);
+										<br>shape(w3);
+										<br>shape(w4);
+										<br>shape(red);
+										<br>shape(yellow);
+										<br>shape(blue);
+										<br>fill(255); //white
+										<br>textSize(32);
+										<br>text("PRESS AND HOLD",305,117);
+									<br>}<br>
+									<br>void mouseClicked() {
+										<br>println(mouseX,mouseY);
+							</p>
+						</div>
+					</div>
+			</div>
+
+
+			<div style = "margin-top: 5%">
 					<h id = "p5" style = "padding: 25px; font-size: 50px">P5.JS</h>
 					<div class = "subText">
 							<p><i>Processing but better (personal opinion)</i></p>
 						</div>
 					<div class = "clearfix">
-						<div class = "iframeFloat">
-							<iframe  src="https://editor.p5js.org/jiatao.xu/embed/LMvKVjJng"  width="800" height="800"></iframe>
-							<p class = "imgDescription">Name: Interactive Randomness powered by Trig<br>Medium: p5.js<br>Dimension: 800x800<br><br>
-								<ul>
-									<li>Press MOUSE to create shape,</li>
-									<li>Press ANY_KEY(not space) to generate madness,</li> 
-									<li>Space is PAUSE</li>
-								</ul>
+						<div class = "float" id = "trig" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "Interactive Randomness" src = "Processing/XuJiatao_RGM.png">
+							<p class = "imgDescription">Name: Interactive Randomness powered by Trig<br>Medium: p5.js<br>Dimension: 800x800<br><br></p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; <i>Interactive Randomness powered by Trigonometry</i>, or IRT in short, was created as an assignment for ART 74.
+									The idea was to create a tool where with a few interaction, everyone can create their unique computer generated art. 
+									As the name suggest, the motion of the geometries is derived from basic Trig. By using randomly generated number as variable, the 
+									code can generated varying size of shape at a different speed.
+									<br>&emsp; The main goal of this code art is to created a vibrant chaotic yet controlled image. The chaos coming from the randomness and
+									viewer interaction, whereas the controlled-ness comes from the limitation of the Trig function: No matter how random the variables are, the final
+									shape always ends with a square.
+									<br>
+									<br>
+									<b>INSTRUCTION</b>:<br>Press MOUSE to create shape,<br>Press ANY_KEY(not space) to generate madness,<br>Space is PAUSE<br>Screenshot at any moment you want.<br><br>
+									<a href="https://editor.p5js.org/jiatao.xu/sketches/LMvKVjJng" target="_blank">Try it out yourself (Source Code Included)</a>
 							</p>
 						</div>
 		
-						<div class = "iframeFloat">
-							<iframe src="https://editor.p5js.org/jiatao.xu/embed/uvrOdTzq_"  width="400" height="400"></iframe>
+						<div class = "float" id = "rgb" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "Rgb diamond" src = "Processing/XuJiatao_RGB.png">
 							<p class = "imgDescription">Name: RGB Diamond<br>Medium: p5.js<br>Dimension: 400x400<br><br>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; A little fun project trying to generate 3D shapes using radiating line only.
+									<br>
+									<br><br><a href="https://editor.p5js.org/jiatao.xu/sketches/uvrOdTzq_" target="_blank">Try it out yourself (Source Code Included)</a>
+							</p>
 						</div>
-
-						<div class = "iframeFloat">
-							<iframe src="https://editor.p5js.org/jiatao.xu/embed/pabfeUnYe" width="400" height="400"></iframe>
+						
+						<div class = "float" id = "star" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "star" src = "Processing/XuJiatao_Star.png">
 							<p class = "imgDescription">Name: A Star in a Starfield<br>Medium: p5.js<br>Dimension: 400x400<br><br></p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;A little mouse tracking project. A lone star in a starfield. Lost.
+									<br>
+									<br><a href="https://editor.p5js.org/jiatao.xu/sketches/pabfeUnYe" target="_blank">Try it out yourself (Source Code Included)</a>
+					</p>
 						</div>
 
 					</div>
-				</div>
-
+				</div>  
 
 
 				<div style = "margin-top: 5%">
@@ -286,101 +691,251 @@
 						</div>
 
 					<div class = "clearfix">
-						<div class = "float">
+
+						<div class = "float" id = "cyber" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "cyber" src = "DD/Xu_Jiatao_CyberConcept.png">
+							<p class = "imgDescription">Name: World Building Concept<br>Medium: Clip Studio Paint<br>Dimension: 3508x2480</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;A world-building project that I had put aside and come back to between breaks. It's a dystopian world where huamnity made every wrong decision. 
+									Unrestricted capitalism infiltrating private life, massive desertification across continent due to climate change, most of natural species of animal or plant extincte,
+									highly militarized police with rampent corruption, disappearance of free speech, and with it democracy. The world is inspired by cyberpunk writing, movie, and videogames.
+									<br>&emsp;The drawings are the design for fashion(left), militarized robot (center), and other scenario.
+									<br>
+									<br><a href="DD/Xu_Jiatao_CyberConcept.png" target="_blank">Full Image</a>
+							</p>
+						</div>
+
+						<div class = "float" id = "magemod" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "Modernized Mage" src = "DD/Xu_Jiatao_FaustConcept.png">
+							<p class = "imgDescription">Name: Modernized Mage <br>Medium: Clip Studio Paint<br>Dimension: 3508x2480 </p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; A try to modernized mages exist in classic western fantasy. As the world developes, so does magic and spells. 
+									To meet the increasing library of different spells, sorceries and spells are store in VR headset for easy access. Magic are also no longer bond by fixed incantation, rather transform into a more flexible
+									and robust structure similar to now-a-day programming language. The magic code then output throught a staff, that powered by a immense source of energy, then affecting reality.
+									<br>
+									<br><a href="DD/Xu_Jiatao_FaustConcept.png" target="_blank">Full Image</a>
+							</p>
+						</div>
+						<div class = "float" id = "drag" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Dragon" src = "DD/XuJiatao_dragon.jpg">
 							<p class = "imgDescription">Name: Feel it<br>Medium: Clip Studio Paint<br>Dimension: 1200x927</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;a cute dragon waiting for cuddle.
+									<br>
+									<br><a href="DD/XuJiatao_dragon.jpg" target="_blank">Full Image</a>
+							</p>
 						</div>	
 
-						<div class = "float">
+						<div class = "float" id = "bee" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Bee" src = "DD/XuJiatao_bee.jpg">
 							<p class = "imgDescription">Name: BEEware<br>Medium: Clip Studio Paint<br>Dimension: 1200x927</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;Use a pun as an excuse to draw a picture of a bee.
+									<br>
+									<br><a href="DD/XuJiatao_bee.jpg" target="_blank">Full Image</a>
+							</p>
 						</div>	
 
-						<div class = "float">
+						<div class = "float" id = "peng" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Penguin" src = "DD/XuJiatao_penguin.jpg">
 							<p class = "imgDescription">Name: IV EMPEROR<br>Medium: Clip Studio Paint<br>Dimension: 927x1200</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;The concept originate from a sudden shower thought connecting A emperor penguin with the tarot card: IV - The Emperor, which both share the name emperor.
+									<br>
+									<br><a href="DD/XuJiatao_penguin.jpg" target="_blank">Full Image</a>
+							</p>
 						</div>
 
-						<div class = "float">
+						<div class = "float" id = "dreamer" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Dreamer" src = "DD/XuJiatao_Dreamer.jpg">
 							<p class = "imgDescription">Name: Dreamer<br>Medium: Clip Studio Paint<br>Dimension: 995x1200</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;<i>Dreamer</i> is a digital illustration draw through Clip Studio Paint with a
+									tablet incombination with a few re-appropriated old works <br>
+									&emsp;The piece was 
+									born in a place of confusion. It was created during my second 
+									year attending SJSU when I was extremely anxious about my future 
+									roadmap. I was unsure what art concentration I wanted to study and 
+									questioned whether my current major was the path I want to follow. 
+									This piece was a result of that confusion and anxiety, where the 
+									colorful unpreditable future contrast with the bleak reality.
+									<br>
+									<br><a href="DD/XuJiatao_Dreamer.jpg" target="_blank">Full Image</a>
+							</p>
 						</div>
 
-						<div class = "float">
-							<img class = "thumbnails" alt = "Outerspace" src = "DD/XuJiatao_outerspace.png">
-							<p class = "imgDescription">Name: Outerspace<br>Medium: Clip Studio Paint<br>Dimension: 1200x848</p>
-						</div>
-
-						<div class = "float">
-							<img class = "thumbnails" alt = "Deer Tribe" src = "DD/XuJiatao_deer.png">
-							<p class = "imgDescription">Name: Deer Tribe<br>Medium: Paint Tool SAI<br>Dimension: 927x1200</p>
-						</div>
-
-						<div class = "float">
-							<img class = "thumbnails" alt = "cat" src = "DD/XuJiatao_cat.jpg">
-							<p class = "imgDescription">Name: Menacing Cat<br>Medium: Clip Studio Paint<br>Dimension: 1200x848</p>
-						</div>
-
-						<div class = "float">
-							<img class = "thumbnails" alt = "Vibe" src = "DD/XuJiatao_vibe.png">
-							<p class = "imgDescription">Name: RKGK <br>Medium: Clip Studio Paint<br>Dimension: 1200x728</p>
-						</div>
-
-						<div class = "float">
-							<img class = "thumbnails" alt = "Deliverer" src = "DD/XuJiatao_deliever.png">
-							<p class = "imgDescription">Name: RKGK (deliverer) <br>Medium: Clip Studio Paint<br>Dimension: 1054x1200</p>
-						</div>
-
-						<div class = "float">
-							<img class = "thumbnails" alt = "book" src = "DD/XuJiatao_book.png">
-							<p class = "imgDescription">Name: Book <br>Medium: Clip Studio Paint<br>Dimension: 1200x804</p>
-						</div>
-
-						<div class = "float">
-							<img class = "thumbnails" alt = "floral desgin" src = "DD/XuJiatao_bg.png">
-							<p class = "imgDescription">Name: floral desgin <br>Medium: Clip Studio Paint<br>Dimension: 1200x675</p>
-						</div>
-
-						<div class = "float">
+						<div class = "float" id = "lion" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Lion" src = "DD/XuJiatao_lion.png">
 							<p class = "imgDescription">Name: School Logo Design <br>Medium: Clip Studio Paint, Illustrator<br>Dimension: 1200x1085</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; A logo for a class project where my group and I design a school and it curriculum.
+									<br>
+									<br><a href="" target="_blank">Full Image</a>
+							</p>
 						</div>
 
-						<div class = "float">
+						<div class = "float" id = "costume" onclick = "ModalDisplay(this.id)">
 							<img class = "thumbnails" alt = "Costume Design" src = "DD/XuJiatao_TA10Final.png">
 							<p class = "imgDescription">Name: Slient Sky -Costume Design<br>Medium: Clip Studio Paint<br>Dimension: 1200x848</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; A costume concept for the theatrical play <i>Silent Sky</i>. The play was set around 1900s, centered around Henrietta Levitt, an American astronomer, who face struggle as a women in the science. 
+									Levitt overcome the sterotype and discovered the period-luminosity relationship for Cepheid. The costume reflect her changes in status, starting from a traditional feminine dress to a more neture and mascilline attire, 
+									as a rejection to patriarchical social norms. 
+									<br>
+									<br><a href="DD/XuJiatao_TA10Final.png" target="_blank">Full Image</a>
+							</p>
 						</div>
 
-						<div class = "float" style="width:50% !important">
-							<img class = "thumbnails"  alt = "DUO" src = "DD/XuJiatao_ProfnLamb.png">
-							<p class = "imgDescription">Name: Welcome Home <br>Medium: Clip Studio Paint<br>Dimension: 1200x848</p>
+						<div class = "float" id = "ang" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "ang" src = "DD/XuJiatao_angel.png">
+							<p class = "imgDescription">Name: Angel with halo, or a poor girl trying to turn on her light<br>Medium: Clip Studio Paint<br>Dimension: 2700x3600 </p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; Fun little 10min sketch. The idea came when I try to turn on my light and realizing that the light just like a halo on top my head.
+									<br>
+									<br><a href="DD/XuJiatao_angel.png" target="_blank">Full Image</a>
+							</p>
+						</div>
+
+						<div class = "float" id = "fire" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "fire" src = "DD/Xu_Jiatao_fire.png">
+							<p class = "imgDescription">Name: Fire <br>Medium: Clip Studio Paint<br>Dimension: 1191x1684 </p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; I was part of a small community host by an indie game developer. This character was created as a personification of a campfire, one of the most popular spot where player used to gather. The pieces mainly celebrates
+									the introduction of a new enviornment.
+									<br>
+									<br><a href="DD/Xu_Jiatao_fire.png" target="_blank">Full Image</a>
+							</p>
+						</div>
+
+						<div class = "float" id = "2020hal" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "Halloween Inktober" src = "DD/XuJiatao_Halloween.png">
+							<p class = "imgDescription">Name: Happy Halloween 2020 <br>Medium: Clip Studio Paint<br>Dimension: 4215x2827</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; A witch celebrating the 2020 Halloween. I was also testing a simplier coloring style on this drawing with only three layer color (one for shadow, one for hue, and one for highlight).
+									<br>
+									<br><a href="DD/XuJiatao_Halloween.png" target="_blank">Full Image</a>
+							</p>
+						</div>
+
+						<div class = "float" id = "witch_o" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "Paint Study Witch" src = "DD/XuJiatao_witch.png">
+							<p class = "imgDescription">Name: Paint Study Witch <br>Medium: Clip Studio Paint<br>Dimension: 5342x3777</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;A experiment with a different coloring style. In this study, I try to draw from imagination without excessive linework. Afterward, I try to color this image
+									in a more realistic way, more akin to how I would paint with acrylic or oil; layer by layer.
+									<br>
+									<br><a href="DD/XuJiatao_witch.png" target="_blank">Full Image</a>
+							</p>
+						</div>
+
+						<div class = "float" id = "vibe" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "Vibe" src = "DD/XuJiatao_vibe.png">
+							<p class = "imgDescription">Name: RKGK <br>Medium: Clip Studio Paint<br>Dimension: 1200x728</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp; RKGK comes from the Japanese 落書き (Rakugaki -> RKGK), meaning scribble or doodle. This is doodle documenting
+									the an emotional response: a somber float-y emotion. It was a quiet night, around 2am. I was listening to lo-fi hip-hop.
+									I felt like I only had existed in the moment, no past nor future attached.
+									<br>
+									<br><a href="DD/XuJiatao_vibe.png" target="_blank">Full Image</a>
+							</p>
 						</div>
 
 
+						<div class = "float" id = "elder" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "elder" src = "DD/XuJiatao_Elder.png">
+							<p class = "imgDescription">Name: Elder<br>Medium: Clip Studio Paint<br>Dimension:2086x2139</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;Eldrich being. This creature is partial inspired by entities in the video game <i>Bloodborne</i>. This drawing was part of Inktober 2021 (Day2).
+									<br>
+									<br><a href="DD/XuJiatao_Elder.png" target="_blank">Full Image</a>
+							</p>
+						</div>
 
+						<div class = "float" id = "majo" onclick = "ModalDisplay(this.id)">
+							<img class = "thumbnails" alt = "majo" src = "DD/XuJiatao_Majo.png">
+							<p class = "imgDescription">Name: Majo <br>Medium: Clip Studio Paint<br>Dimension: 3508x2480</p>
+							<p style = "display: none;" >
+									<br>
+									<b>DESCRIPTION</b>:
+									<br><br>
+									&emsp;<i>魔女</i> (Romaji: majo, English: Witch) is a piece was created during winter break. The pieces
+									was heavily influenced by Japanese animation style of drawing (as most of my digital illustrations are inspired
+									by Anime). It started as anatomy practice, developed into a charater protrait, and subsquently a part of a world-building
+									project. The goal of this pieces is to personificate madness and heresy. Of course, also trying to draw something cute.
+									<br>
+									<br><a href="DD/XuJiatao_Majo.png" target="_blank">Full Image</a>
+							</p>
+						</div>
 
-
-
-
-
-
+						
 					</div>
-
-
 				</div>
-
-
-
-			</div>
 		</div>
 
 
+		
+
 		<div id = "footer">
+			
+			<a style = "font-size: 24px" href = "index.html"> >> Home << </a><br>
+			<a style = "font-size: 24px" href = "about.html"> >> About Me << </a><br>
+			<a style = "font-size: 24px" href = "composition.html"> >> All Works << </a><br>
+
+			<br>
 			<a href = "#bodyComp">
 				<img style = "float:center;" alt = "sadcrown" src = "Other/home.png" height = "90px" width="105px">
 			</a>
 			<p>- v -</p>
 		</div>
+
+		<script type="text/javascript" src="processing.js"></script>
+		<script type="text/javascript" src="ModalHandling.js"></script>
+
+	
 	</body>
+
+	
 
 </html>
